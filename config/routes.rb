@@ -55,8 +55,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  root 'application#hello'
+  resource :players
+  root 'players#index'
 
   get 'es/' => 'application#hello_es'
 end
