@@ -1,6 +1,6 @@
 <h1>Listing players</h1>
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -18,9 +18,9 @@
         <td><%= player.prize %></td>
         <td><%= player.race %></td>
         <td><%= player.league %></td>
-        <td><%= link_to 'Show', player %></td>
-        <td><%= link_to 'Edit', edit_player_path(player) %></td>
-        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <!--  <td><%= link_to 'Show', player %></td> -->
+        <td><%= link_to '', edit_player_path(player), class: "glyphicon glyphicon-pencil" %></td>
+        <td><%= link_to '', player, method: :delete, data: { confirm: 'Are you sure?' }, class: "glyphicon glyphicon-remove" %></td>
       </tr>
     <% end %>
   </tbody>

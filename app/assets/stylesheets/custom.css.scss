@@ -1,0 +1,12 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 70px;
+}
+
+.glyphicon:hover {
+  background-color: transparent;
+  color: blue;
+  text-decoration: none;
+}
