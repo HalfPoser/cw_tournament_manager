@@ -1,7 +1,7 @@
 class CreateTeams < ActiveRecord::Migration
   def change
     create_table :teams do |t|
-      t.integer :captain
+      t.references :captain, index: true, foreign_key: true
       t.integer :budget
       t.string :rooster
 
