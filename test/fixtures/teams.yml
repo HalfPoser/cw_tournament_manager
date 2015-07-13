@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  captain: 1
+  budget: 
+  rooster: MyString
+
+two:
+  captain: 1
+  budget: 
+  rooster: MyString
