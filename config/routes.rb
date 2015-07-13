@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :players
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -55,4 +57,6 @@ Rails.application.routes.draw do
   #   end
 
   root 'application#hello'
+
+  get 'es/' => 'application#hello_es'
 end
